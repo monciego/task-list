@@ -7,6 +7,34 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Task List</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.bunny.net">
+    <link href="https://fonts.bunny.net/css?family=inter:400,500,600" rel="stylesheet" />
+
+    {{-- blade-formatter-disable --}}
+    <style type="text/tailwindcss">
+        .btn {
+            @apply rounded-md px-2 py-1 text-center font-medium text-slate-700 shadow-sm ring-1 ring-slate-700/10 hover:bg-slate-50
+        }
+
+        .link {
+            @apply font-medium text-gray-700 underline decoration-pink-500
+        }
+
+        label {
+            @apply block uppercase text-slate-700 mb-2
+        }
+
+        input,
+        textarea {
+            @apply shadow-sm appearance-none border w-full py-2 px-3 text-slate-700 leading-tight focus:outline-none
+        }
+
+        .error {
+            @apply text-red-500 text-sm
+        }
+  </style>
+    {{-- blade-formatter-enable --}}
+
     @yield('styles')
 </head>
 
